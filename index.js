@@ -1,8 +1,8 @@
-var descriptionInput = document.getElementById("input")
-var priorityInput = document.getElementById("priority-input")
-var list = document.getElementById("list")
+const descriptionInput = document.getElementById("input")
+const priorityInput = document.getElementById("priority-input")
+const list = document.getElementById("list")
 
-var tasks = []
+const tasks = []
 
 function onTaskSubmit() {
   var task = {
@@ -109,7 +109,8 @@ function generateRandomTask() {
 
   var task = {
     value: randomTasks[Math.floor(Math.random() * randomTasks.length)],
-    status: "to do"
+    status: "to do",
+    priority: 0
   }
 
   tasks.push(task)
